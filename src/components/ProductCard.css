@@ -1,0 +1,89 @@
+.product-card {
+  min-width: 250px;
+  min-height: 200px;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #646cff;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.product-rating {
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+.stock-status {
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.in-stock {
+  background-color: rgba(0, 255, 0, 0.2);
+  color: #4ade80;
+}
+
+.out-of-stock {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #f87171;
+}
+
+.discount-badge {
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #fbbf24;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.rating-badge {
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: light) {
+  .product-card {
+    background-color: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-category {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
