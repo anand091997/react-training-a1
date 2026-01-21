@@ -3,6 +3,7 @@ import './App.css'
 import AssignmentNavigation from './components/AssignmentNavigation'
 import ProductList from './assignments/1.ProductList/ProductList'
 import TodoList from './assignments/2.TodoList/TodoList'
+import UserManagementApp from './assignments/3.UserManagementApp/UserManagementApp'
 
 const App = () => {
   const [currentAssignment, setCurrentAssignment] = useState(1)
@@ -18,6 +19,11 @@ const App = () => {
       title: 'To Do List',
       component: TodoList
     },
+    {
+      id: 3,
+      title: 'User Management Mini App',
+      component: UserManagementApp
+    }
   ]
 
   const handleSelectAssignment = (assignmentId) => {

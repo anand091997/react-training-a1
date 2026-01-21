@@ -1,0 +1,111 @@
+.user-list-container {
+  margin-top: 2rem;
+}
+
+.user-list-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-color: rgba(100, 108, 255, 0.3);
+}
+
+.user-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0;
+}
+
+.user-email {
+  font-size: 0.95rem;
+  color: #818cf8;
+  margin: 0;
+}
+
+.user-city {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .user-list-title {
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .user-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-card:hover {
+    border-color: rgba(100, 108, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-name {
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  .user-email {
+    color: #646cff;
+  }
+
+  .user-city {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .empty-state {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    padding: 1rem 1.25rem;
+  }
+
+  .user-name {
+    font-size: 1rem;
+  }
+
+  .user-email,
+  .user-city {
+    font-size: 0.9rem;
+  }
+}
